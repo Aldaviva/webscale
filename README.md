@@ -3,9 +3,11 @@ WebScale
 
 Measure weight using a Stamps.com digital USB postage scale.
 
+![Stamps.com 5-pound digital postage scale](http://store.stamps.com/web/images/catalog/sku/SC05500000_small.jpg)
+
 # Hardware
 1. Sign up for free trial at [Stamps.com](https://registration.stamps.com/registration/).
-2. During signup, request a complimentary 5-pound digital scale. Pay $9.99 shipping and handling.
+2. During signup, request a complimentary [5-pound digital postage scale](http://store.stamps.com/Store/catalog/product4.jsp?id=5lb-digital-postal-scale). Pay $9.99 shipping and handling.
 3. Before the four-week trial is up, cancel your account and avoid the monthly fee.
 
 # Installation
