@@ -1,0 +1,8 @@
+{
+    "name": "webscale",
+    "version": "0.0.0",
+    "author": "Ben Hutchison <ben@aldaviva.com>",
+    "dependencies": {
+	"node-hid": "0.3.1"
+    }
+}
