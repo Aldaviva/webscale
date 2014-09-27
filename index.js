@@ -22,7 +22,7 @@ WebScale.prototype.disconnect = function(){
 	this._device.close();
 	this._device = null;
     }
-});
+};
 
 WebScale.prototype._connectWithRetry = function(){
     var reconnectInterval = setInterval((function(){
