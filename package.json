@@ -1,16 +1,16 @@
 {
     "name": "webscale",
-    "version": "0.0.0",
+    "version": "0.0.2",
     "author": "Ben Hutchison <ben@aldaviva.com> (http://aldaviva.com)",
     "dependencies": {
-	"node-hid": "0.3.1"
+		"node-hid": "0.3.1"
     },
     "bugs": {
-	"url": "https://github.com/Aldaviva/WebScale/issues"
+		"url": "https://github.com/Aldaviva/WebScale/issues"
     },
     "repository": {
-	"type": "git",
-	"url": "https://github.com/Aldaviva/WebScale.git"
+		"type": "git",
+		"url": "https://github.com/Aldaviva/WebScale.git"
     },
     "license": "MIT",
     "description": "Measure weight using a Stamps.com digital USB postage scale.",

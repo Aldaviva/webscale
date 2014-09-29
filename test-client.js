@@ -17,8 +17,11 @@ webScale.on('connected', function(){
     console.log("Scale online.");
 });
 
-webScale.on('disconnected', function(){
-    console.warn("Scale disconnected. Reconnecting...");
+webScale.once('disconnected', function(){
+    console.log("Scale disconnected. Try running as root.");
+    webScale.on('disconnected', function(){
+	console.log("Scale disconnected. Reconnecting...");
+    });
 });
 
 function roundTowardsZero(num){

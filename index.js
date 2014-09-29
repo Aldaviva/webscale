@@ -25,14 +25,11 @@ WebScale.prototype.disconnect = function(){
 };
 
 WebScale.prototype._connectWithRetry = function(){
-    var reconnectInterval = setInterval((function(){
-	try {
-	    this._connect();
-	    clearInterval(reconnectInterval);
-	} catch(e){
-	    //reconnect failed, try again shortly
-	}
-    }).bind(this), 2000);
+    try {
+	this._connect();
+    } catch(e){
+	setTimeout(this._connectWithRetry.bind(this), 2000);
+    }
 };
 
 WebScale.prototype._connect = function(){
@@ -40,10 +37,16 @@ WebScale.prototype._connect = function(){
 
     if(!devices.length || !devices[this._deviceIndex]){
 	this.emit('disconnected');
+	throw new Error('could not find device');
     }
 
     var devicePath = devices[this._deviceIndex].path;
-    this._device = new HID.HID(devicePath);
+    try {
+	this._device = new HID.HID(devicePath);
+    } catch(e){
+	this.emit('disconnected');
+	throw e;
+    }
     this._onConnect(this._device);
 };
 
