@@ -3,7 +3,7 @@
     "version": "0.0.2",
     "author": "Ben Hutchison <ben@aldaviva.com> (http://aldaviva.com)",
     "dependencies": {
-		"node-hid": "0.3.1"
+		"node-hid": "^0.5.4"
     },
     "bugs": {
 		"url": "https://github.com/Aldaviva/WebScale/issues"
