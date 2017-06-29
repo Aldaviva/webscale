@@ -1,10 +1,13 @@
 {
     "name": "webscale",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "author": "Ben Hutchison <ben@aldaviva.com> (http://aldaviva.com)",
     "dependencies": {
-		"node-hid": "0.3.1"
+		"node-hid": "0.5.1"
     },
+    "contributors": [
+		"Christopher Hiller <boneskull@boneskull.com> (https://boneskull.com)"
+    ],
     "bugs": {
 		"url": "https://github.com/Aldaviva/WebScale/issues"
     },
